@@ -1,10 +1,12 @@
-# Style loading issue with @sveltejs/adapter-node
+# SvelteKit style loading issue
 
-1. Created app using `npx sv create`, added `router: { resolution: 'server' }` to `svelte.config.js`
-2. Made a couple of routes
-3. `npm run build`
-4. `node build/`
+1. Created app using `npx sv create`, added `router: { resolution: 'server' }` and `@sveltejs/adapter-node` to `svelte.config.js`
+2. Created a couple of routes
+3. Build `npm run build`
+4. Run `node build/`
 5. Observe that the CSS does not load when going to the routes, refreshing the page makes the styles magically appear.
+
+Everything works fine in dev mode. Preview mode is also broken.
 
 # sv
 
